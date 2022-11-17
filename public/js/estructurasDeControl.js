@@ -37,10 +37,30 @@ function validarEdad(age) {
     }
 }
 
+/**
+ * Funcion que muestra mensajes de acuerdo a la edad, pero usando la estructura de switch
+ * @param {edad} age 
+ */
+function mandarMensajes(age) {
+    switch (age) {
+        case 13:
+            console.log("Deberias estar en la secundari.");
+            break;
+        case 17:
+            console.log("Espera un año mas.");
+            break;
+        default:
+            console.log("No pues no se que decirte");
+
+    }
+}
+
 let age = prompt("Introduce tu edad");
 
 if (age && Number(age) && age > 0 && esEntero(age)) {
     validarEdad(age);
+    age = parseInt(age);
+    mandarMensajes(age);
 } else {
     console.log("Introduce tu edad");
     location.reload();
