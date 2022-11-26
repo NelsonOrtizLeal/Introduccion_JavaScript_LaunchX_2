@@ -1,4 +1,15 @@
-//IF - ELSE
+for (let i = 0; i < 15; i++){
+    if((i % 2) != 0 ){
+        console.log(i , "No es par");
+        continue;
+    }
+
+    if(i == 10){
+        console.log("Llegaste al tope 10");
+        break;
+    }
+};
+console.log("For terminado");
 
 /**
  * Recibe un numero y pregunta si es entero.
