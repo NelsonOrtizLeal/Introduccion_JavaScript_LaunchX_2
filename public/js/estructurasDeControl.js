@@ -76,3 +76,30 @@ if (age && Number(age) && age > 0 && esEntero(age)) {
     console.log("Introduce tu edad");
     location.reload();
 }
+
+//While
+let boletosDisponibles = 10;
+while (boletosDisponibles > 0){
+    console.log("Boleto comprado para el Corona Capital");
+    boletosDisponibles --;
+    console.log("Quedan: " + boletosDisponibles);
+}
+
+//Do While
+//Al menos se ejecuta 1 vez
+do{
+    console.log("Boleto comprado para el Corona Capital");
+    boletosDisponibles --;
+    console.log("Quedan: " + boletosDisponibles);
+}while(boletosDisponibles > 0);
+
+// TRY CATCH finally
+try{
+    // Código susetible a fallar
+    console.log("Holi");
+    throw "Se acabo la fiesta 666";
+}catch(error){
+    console.info("Validar edad no existe");
+}finally{
+    console.warn("Tu crush no te quiere: -.-");
+}
